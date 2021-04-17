@@ -1,45 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   exec03.c                                           :+:      :+:    :+:   */
+/*   exec07.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hde-camp <hde-camp@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/04/16 22:40:23 by hde-camp          #+#    #+#             */
-/*   Updated: 2021/04/16 23:42:03 by hde-camp         ###   ########.fr       */
+/*   Created: 2021/04/17 01:52:04 by hde-camp          #+#    #+#             */
+/*   Updated: 2021/04/17 03:07:49 by hde-camp         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include "ex03/ft_recursive_power.c"
+#include "ex07/ft_find_next_prime.c"
 
 void	ft_putnbr(int nb);
 void	ft_putstr(char *str);
 
 int	main(void)
 {
-	write(1,"------------------------------------------------EX03------------------------------------------------\n",101);
-	write(1,"-------------------------Escreva uma funçao que retorne nb elevado a power--------------------------\n\n",102);
-	ft_putstr("nb = 10 | pow = -1\n");
-	ft_putstr("Valor esperado:		0\n");
-	ft_putstr("Valor do avaliado:	");
-	ft_putnbr(ft_recursive_power(10, -1));
+	write(1,"------------------------------------------------EX07------------------------------------------------\n",101);
+	write(1,"-----------------------Escreva uma funçao que determine o proximo numero primo----------------------\n\n",102);
+	ft_putnbr(ft_find_next_prime(255));
 	ft_putstr("\n\n");
-	ft_putstr("nb = 10 | pow =  0\n");
-	ft_putstr("Valor esperado:		1\n");
-	ft_putstr("Valor do avaliado:	");
-	ft_putnbr(ft_recursive_power(10, 0));
-	ft_putstr("\n\n");
-	ft_putstr("nb = 0 | pow =  0\n");
-	ft_putstr("Valor esperado:		1\n");
-	ft_putstr("Valor do avaliado:	");
-	ft_putnbr(ft_recursive_power(0, 0));
-	ft_putstr("\n\n");
-	ft_putstr("nb = 3 | pow =  7\n");
-	ft_putstr("Valor esperado:		2187\n");
-	ft_putstr("Valor do avaliado:	");
-	ft_putnbr(ft_recursive_power(3, 7));
-	ft_putstr("\n");
 	write(1,"------------------------------------------------FIM-------------------------------------------------\n",101);
 	return (0);
 }
