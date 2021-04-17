@@ -6,7 +6,7 @@
 /*   By: hde-camp <hde-camp@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/17 01:13:44 by hde-camp          #+#    #+#             */
-/*   Updated: 2021/04/17 01:48:13 by hde-camp         ###   ########.fr       */
+/*   Updated: 2021/04/17 03:24:24 by hde-camp         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ int	main(void)
 	ft_putstr("	Nº	50\n");
 	ft_putstr("Valor esperado:		0\n");
 	ft_putstr("Valor do avaliado:	");
-	ft_putnbr(ft_sqrt(16));
+	ft_putnbr(ft_sqrt(50));
 	ft_putstr("\n\n");
 	write(1,"------------------------------------------------FIM-------------------------------------------------\n",101);
 	return (0);
